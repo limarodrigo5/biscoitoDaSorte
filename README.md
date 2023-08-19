@@ -4,6 +4,7 @@ Bem-vindo(a) ao **Biscoito da Sorte**! 🍀 Este é um projeto que oferece mensa
 
 ## Funcionalidades 🚀
 
+- Acesse o [GitHub Pages](https://limarodrigo5.github.io/biscoitoDaSorte/) do projeto.
 - Clique na imagem do "biscoito da sorte" para revelar uma mensagem inspiradora.
 - Se desejar uma nova mensagem, basta clicar no botão "Abrir outro biscoito".
 - Você também pode pressionar a tecla "Enter" para revelar uma nova mensagem instantaneamente.

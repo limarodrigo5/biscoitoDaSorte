@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.screen1 p,
+.screen2 button {
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  background: linear-gradient(45deg, #190361 0%, #b0f 100%);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+main {
+  width: min(42.8rem, 90%);
+
+  border-radius: 0.5rem;
+  background: #fff;
+  box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.8);
+  padding: 4.8rem 6.4rem 6.4rem;
+
+  margin-top: -1.4rem;
+  text-align: center;
+}
+
+.screen1 {
+  width: min(30rem, 90%);
+  display: flex;
+  flex-direction: column;
+}
+
+.screen1 h1 {
+  font-weight: bold;
+  font-size: 2.4rem;
+  width: 25.8rem;
+
+  margin-left: 2rem;
+}
+
+.screen1 p {
+  font-size: 1.5rem;
+  width: 20rem;
+  margin-top: 1.4rem;
+  margin-left: 5.4rem;
+}
+
+.screen1 img {
+  width: 24.8rem;
+  height: 19.1rem;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+
+  cursor: pointer;
+}
+
+@keyframes surprise {
+  0%,
+  100% {
+    transform: translateX(0); /* Mantém a imagem no lugar original */
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-5px); /* Move a imagem pra esquerda */
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(5px); /* Move a imagem pra direita */
+  }
+}
+
+.screen1 img:hover {
+  animation: surprise 1s ease infinite;
+}
+
+.hide {
+  display: none;
+}
+
+.screen2 {
+  height: 53.4rem;
+}
+
+.screen2 h1 {
+  width: 29.7rem;
+}
+
+.screen2 p {
+  font-family: "Dancing Script", sans-serif;
+  font-size: 2.4rem;
+  width: 28.8rem;
+  padding: 1rem;
+  background: #e4edf1;
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.5);
+  margin-top: 3rem;
+  animation: topdown 2s ease forwards;
+}
+
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translate(0, 250%) scale(0.1); /* Fora da tela, abaixo */
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1); /* Posição final, acima */
+  }
+}
+
+.screen2 img {
+  margin-top: 7rem;
+}
+
+button {
+  margin-top: 10rem;
+  border-radius: 0.4rem;
+  background: #ff9500;
+  padding: 1.6rem;
+  color: #fff;
+  text-align: center;
+  border: none;
+
+  font-weight: bold;
+  font-size: 1.5rem;
+
+  cursor: pointer;
+
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #c97602;
+}

@@ -1,4 +1,4 @@
-🥠 **Biscoito da Sorte - Mensagens Motivacionais** 🌟
+🥠 # Biscoito da Sorte - Mensagens Motivacionais 🌟
 
 Bem-vindo(a) ao **Biscoito da Sorte**! 🍀 Este é um projeto que oferece mensagens motivacionais para te inspirar a cada clique. Abra o "biscoito" virtual e descubra uma dose de positividade para o teu dia! ✨
 
